@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install git && \
     cd demos/tensorflow/tensorflow_serving && \
     ./prepare_model_and_env.sh && \
     cd client && \
-    ./prepare_client_env.sh
+    ./prepare_client_env.sh && \
+    mv ../resnet50-v15-fp32/ /root && \
+    rm -rf ./occlum
 
 WORKDIR /root
