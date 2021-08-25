@@ -9,6 +9,6 @@ RUN apt-get update && apt-get install git && \
     cd client && \
     ./prepare_client_env.sh && \
     mv ../resnet50-v15-fp32/ /root && \
-    rm -rf ./occlum
+    rm -rf /root/occlum
 
 WORKDIR /root
